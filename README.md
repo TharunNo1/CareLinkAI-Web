@@ -8,7 +8,7 @@ This project was started on behalf of the ClarifAI Hackathon by [lablab.ai](http
 ## 👥 Team
 **Leader :** Vinoth Kumar
 
-**Team members :** Tharun G, Ramshankar
+**Team members :** Tharun G, Ramshankar, KP Kshitij Parashar
 
 ## Table of Contents
 
