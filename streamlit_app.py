@@ -115,7 +115,7 @@ def chat():
                         st.markdown(content)
                     response = clarifAI_request(content)
                     st.session_state["messages"].append(message_dict( "assistant", response))
-                    st.experimental_rerun()
+                    # st.experimental_rerun()
             except sr.UnknownValueError:
                 st.session_state["messages"].append(message_dict("assistant","Sorry, Can you please rephrase that?"))
             except sr.RequestError as e:
