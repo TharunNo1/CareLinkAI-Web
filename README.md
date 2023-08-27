@@ -12,6 +12,11 @@ This project is started on behalf of the ClarifAI Hackathon by [lablab.ai](https
 - Includes a Speech Recognition module for processing spoken language.
 - Collaborates with Eleven Labs for seamless integration of cutting-edge technologies.
 
+## Team
+**Leader :** Vinoth Kumar
+
+**Team members :** Tharun G, Ramshankar
+
 ## Installation
 
 1. Clone this repository to your local machine.
