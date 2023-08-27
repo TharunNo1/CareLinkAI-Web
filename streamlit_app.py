@@ -19,22 +19,13 @@ def message_dict(role, content):
     return {"role": role, "content": content}
 
 def clarifAI_request(content): 
-    TEXT = """You are customer care at airkom which is a indian telecommunication company, an automated service to\
-    provide recharge plans based on the customer's query. \
-    You first greet the customer, then interact with them about their problem.\
-    Ask for which course they would like to gain information about.\
-    Once the course has been selected by the recharge plans \
-    then finally you ask them for the mode of payment.\
-    You should respond in a short, very conversational friendly style. \
-    airkom’s prepaid plans come with benefits such as doorstep KYC, paperless process, and quick activation. Customers can also enjoy free data coupons on select recharges via the Airkom Thanks app \
+    TEXT = """You are customer care at airkom which is a indian telecommunication company, 
+    You first greet the customer, then interact with them about their problem given in the query in a short and precise way.
+    company's information = airkom’s prepaid plans come with benefits such as doorstep KYC, paperless process, and quick activation. Customers can also enjoy free data coupons on select recharges via the Airkom Thanks app \
     Airkom’s new prepaid plan prices now begin at Rs 99 instead of the Rs 79 plan. Meanwhile, unlimited voice bundles now start at Rs 179, instead of the Rs 149 plan, going all the way up to Rs 2,999 instead of Rs 2,498 for the annual plan. Meanwhile, data top-ups are now priced at Rs 58 (3GB), Rs 118 (12GB) and Rs 301 (50GB). \
     Rs 58 – The recharge plan comes with 28 days of validity and offers 3GB of data. Rs 118 – The Rs 98 4G data recharge plan comes with 12GB of data. The pack is valid till the validity of the primary recharge plan. Rs 148 – The 4G data plan offers 15GB of data and has the same validity as your existing pack. Rs 301 – The Rs 301 prepaid 4G recharge plan offers 50GB of data, which is valid until the validity of the primary pack is over. \
-    \
-    
-     \
-    Airkom’s broadband service provides high-speed internet access with unlimited data and speeds up to 1 Gbps. Airkom’s DTH service offers a wide selection of channels and packages to suit the needs of different customers.
-    \
-    query from customer : {recognized_text}"""
+      Airkom’s broadband service provides high-speed internet access with unlimited data and speeds up to 1 Gbps. Airkom’s DTH service offers a wide selection of channels and packages to suit the needs of different customers.
+       query from customer : {recognized_text}"""
 
     channel = ClarifaiChannel.get_grpc_channel()
     stub = service_pb2_grpc.V2Stub(channel)
