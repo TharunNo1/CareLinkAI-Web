@@ -6,7 +6,7 @@ CareLinkAI - Web is a web application that leverages the power of various techno
 This project was started on behalf of the ClarifAI Hackathon by [lablab.ai](https://lablab.ai/).
 
 ## 👥 Team
-**Leader :** Vinoth Kumar
+**Leader :** Vinoth Kumar Murugan
 
 **Team members :** Tharun G, Ramshankar, KP Kshitij Parashar
 
